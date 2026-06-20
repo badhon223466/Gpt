@@ -1,0 +1,6 @@
+{
+  "name": "PrizeHour",
+  "description": "A premium rewards, sweepstakes, and offers platform featuring beautiful user and admin dashboards, interactive task submission, referrals, cashout step flows, real-time live chat, and comprehensive statistics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

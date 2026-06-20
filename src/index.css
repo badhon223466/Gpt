@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@keyframes infinite-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Custom premium scroll speeds for maximum legibility */
+.animate-scroll-slow {
+  animation: infinite-scroll 180s linear infinite !important;
+}
+
+.animate-scroll-medium {
+  animation: infinite-scroll 100s linear infinite !important;
+}
+
+.animate-scroll-very-slow {
+  animation: infinite-scroll 240s linear infinite !important;
+}
+
+/* Pause animations on hover for easy user reading/interaction */
+.animate-scroll-slow:hover,
+.animate-scroll-medium:hover,
+.animate-scroll-very-slow:hover,
+.animate-infinite-scroll:hover {
+  animation-play-state: paused !important;
+}
+
+/* Legacy backwards compatibility */
+.animate-infinite-scroll {
+  animation: infinite-scroll 160s linear infinite !important;
+}
